@@ -1,0 +1,25 @@
+'''
+Ejercicio 8.5 — Completa el código
+Completa el programa que encuentra los números primos entre 2 y un límite dado:
+'''
+def es_primo(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n%i==0:
+            return False
+    return True
+
+def listar_primos(limite):
+    primos = []
+    for num in range(2, limite + 1):
+        if es_primo(num):
+            primos.append(num)
+    return primos
+
+print(listar_primos(30))
+# [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+'''
+Salida:
+[2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+'''
