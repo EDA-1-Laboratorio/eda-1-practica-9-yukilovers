@@ -1,0 +1,21 @@
+'''
+Ejercicio 8.4 — Completa el código
+Completa el programa que calcula el factorial de un número usando un ciclo while:
+'''
+def factorial(n):
+    resultado = 1
+    while n>0:
+        resultado = resultado * n
+        n=n-1
+    return resultado
+
+# Pruebas
+print("5! =", factorial(5))    # 120
+print("0! =", factorial(0))    # 1
+print("10! =", factorial(10))  # 3628800
+'''
+Salida:
+5! = 120
+0! = 1
+10! = 3628800
+'''
