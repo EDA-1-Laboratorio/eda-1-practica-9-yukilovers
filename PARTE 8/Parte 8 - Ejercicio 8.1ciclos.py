@@ -33,17 +33,3 @@ for materia, nota in notas.items():
     print(f"  {materia}: {nota}")
 
 
-
-'''
-Ejecución del código en python:
-
-=== break ===
-0 1 2 3 4 ¡Llegué a 5, me detengo!
-
-
-=== continue ===
-1 3 5 7 9 
-
-=== for-else ===
-Todos los números son pares
-'''
